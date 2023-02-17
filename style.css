@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');  
 
+
+* {
+  box-sizng: border-box;
+}
 body {
   font-family: Poppins, sans-serif;
   background-color: #131316;
@@ -7,17 +11,28 @@ body {
   padding: 0;
   margin: 0;
 }
-
+.title {
+  text-align: center;
+}
 section {
+  background-color: #1a7b8d;
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 100vh;
+
+  min-height: 70vh;
+  max-height: 500px;
+  padding: 1rem 2rem;
+  width: 70%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+
 }
 
 .hidden {
   opacity: 0;
-  transition: all 5s;
+  transition: 3s;
 }
 
 .show {
